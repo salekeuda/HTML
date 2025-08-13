@@ -1,0 +1,27 @@
+     h1{
+                padding:0 120px;
+            }
+            h2{
+                padding: 0 120px;
+            }
+            h3{
+                padding: 0 120px;
+            }
+            h4{
+                padding: 0 120px;
+            }          
+            
+            p{
+                padding: 0 120px;
+            }
+            body {
+                margin: 0;
+                height: 100vh;
+                color: white;
+                animation: vaihdaTausta 20s infinite alternate ease-in-out;
+            }
+            @keyframes vaihdaTausta {
+                0% {background-color:black} 
+                35%{background-color: gray;}
+                70%{background-color: lightskyblue;}
+                100%{background-color: yellowgreen;}
