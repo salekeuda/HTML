@@ -3,7 +3,7 @@
     color: black;
     background-color: #AA7D39;
     font-family: Verdana;
-    margin: 1 5;
+    margin: 1% 5%;
     line-height: 150%;
 }
 H1 {
@@ -11,8 +11,47 @@ H1 {
 }
 
  .navigointipalkki ul {  
-        list-style-type: none; overflow: hidden;
+        list-style-type: none; 
+        overflow: hidden; 
+        background-color: rgb(50, 50 , 90);
+        
 }
 .navigointipalkki li {
-    float: left; 
+    float: left; padding: 0px 30px;
 }
+.navigointipalkki a {
+color: white; 
+text-decoration: none;
+}
+.navigointipalkki a:hover {
+    color: #19171e;
+}
+.kuva {
+    float: right;
+    width: 400px;
+    margin: 20px;   
+}
+.video {
+    width: 512px;
+    height: 288px;  float: left;
+    position: relative;
+    padding: 0px;
+    margin: 20px;
+}
+.vieras {
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%; 
+            height: 0;
+            overflow: hidden;
+            background-color: rgb(50, 50 , 90);
+            overflow: hidden;
+            
+        }
+        .vieras iframe {
+            position: absolute;
+            right: 40%;
+            width: 30%;
+            height: 70%;
+            border: 0;
+        }

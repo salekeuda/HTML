@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nopea esimerkkisivu</title>
+  <style>
+    * {box-sizing:border-box; margin:0; padding:0;}
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      line-height:1.5;
+      color:#111;
+      background: #fff6f8; /* vaaleanpunainen tausta */
+    }
+    a {color: inherit; text-decoration:none;}
+
+    .container {max-width:1000px; margin:32px auto; padding:24px;}
+    header {display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:24px;}
+    .logo {font-weight:700; font-size:1.2rem; color:#d94f70;}
+    nav a {margin-left:14px; font-size:0.95rem; color:#d94f70; opacity:0.9;}
+    .hero {
+      background:linear-gradient(135deg,#fff6f8, #ffe6eb);
+      padding:36px;
+      border-radius:14px;
+      box-shadow:0 6px 20px rgba(220,100,130,0.06);
+      display:flex; gap:24px; align-items:center; flex-wrap:wrap;
+    }
+    .hero .left {flex:1; min-width:260px;}
+    .hero h1 {font-size:1.6rem; margin-bottom:10px;}
+    .hero p {color:#444; margin-bottom:16px;}
+    .btn {
+      display:inline-block; padding:10px 16px; border-radius:10px;
+      background:#e66f8d; color:#fff; font-weight:600;
+      transition: background 0.2s;
+    }
+    .btn:hover {background:#d94f70;}
+    .features {
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px; margin-top:20px;
+    }
+    .card {
+      background:#fff;
+      padding:16px; border-radius:10px;
+      box-shadow:0 4px 12px rgba(220,100,130,0.05);
+      border: 1px solid #ffe0e6;
+    }
+    footer {margin-top:28px; text-align:center; color:#666; font-size:0.9rem;}
+
+    form {display:grid; gap:8px; margin-top:12px;}
+    input, textarea {
+      padding:10px; border:1px solid #ffd6de; border-radius:8px; font-size:0.95rem;
+      background: #fffafa;
+    }
+    textarea {min-height:90px; resize:vertical;}
+    .row {display:flex; gap:8px;}
+    .row > * {flex:1;}
+
+    @media (max-width:560px){
+      header {flex-direction:column; align-items:flex-start;}
+      .hero {padding:18px;}
+      .logo {font-size:1rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">OmaSivu</div>
+      <nav>
+        <a href="#features">Ominaisuudet</a>
+        <a href="#about">Tietoa</a>
+        <a href="#contact">Ota yhteyttä</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="left">
+          <h1>Tee nopea HTML-sivu — valmis pohja</h1>
+          <p>Tämä on kevyt, responsiivinen esimerkkisivu. Voit muokata tekstiä, tyylejä tai lisätä omia kuvia ja toimintoja helposti.</p>
+          <a class="btn" href="#contact">Ota yhteyttä</a>
+        </div>
+        <div style="min-width:220px;">
+          <svg width="220" height="140" viewBox="0 0 220 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="220" height="140" rx="12" fill="#ffe6eb"/>
+            <circle cx="60" cy="50" r="24" fill="#ffd6de"/>
+            <rect x="100" y="30" width="90" height="14" rx="6" fill="#ffe6eb"/>
+            <rect x="100" y="56" width="60" height="12" rx="6" fill="#ffe6eb"/>
+            <rect x="10" y="90" width="200" height="30" rx="8" fill="#ffffff" stroke="#ffd6de"/>
+          </svg>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="card">
+          <h3>Responsiivinen</h3>
+          <p>Pohja toimii sekä mobiilissa että työpöydällä ilman lisäkirjastoja.</p>
+        </div>
+        <div class="card">
+          <h3>Helppo muokata</h3>
+          <p>Vaihda värit, fontit ja sisältö nopeasti yhdestä tiedostosta.</p>
+        </div>
+        <div class="card">
+          <h3>Kevyt</h3>
+          <p>Ei ulkopuolisia riippuvuuksia — latautuu nopeasti.</p>
+        </div>
+      </section>
+
+      <section id="about" style="margin-top:18px;">
+        <div class="card" style="padding:18px;">
+          <h2>Tietoa tästä pohjasta</h2>
+          <p>Tämän sivun koodi on tarkoitettu nopeaksi aloituspohjaksi: sisältää headerin, hero-osion, kortit ja kontakt-lomakkeen.</p>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:18px;">
+        <div class="card">
+          <h2>Ota yhteyttä</h2>
+          <form onsubmit="handleSubmit(event)">
+            <div class="row">
+              <input type="text" id="name" placeholder="Nimi" required>
+              <input type="email" id="email" placeholder="Sähköposti" required>
+            </div>
+            <textarea id="message" placeholder="Viestisi..." required></textarea>
+            <div style="display:flex; gap:8px; align-items:center;">
+              <button class="btn" type="submit">Lähetä</button>
+              <div id="status" style="color:#d94f70; font-weight:600;"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> OmaSivu — tehty nopeasti HTML:llä
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const status = document.getElementById('status');
+      status.textContent = "Kiitos, " + (name || "vieras") + "! Viesti vastaanotettu.";
+      setTimeout(()=> {
+        document.getElementById('name').value = "";
+        document.getElementById('email').value = "";
+        document.getElementById('message').value = "";
+        status.textContent = "";
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
