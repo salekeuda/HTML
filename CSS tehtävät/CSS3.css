@@ -1,0 +1,46 @@
+#yy {
+    background-color: aqua;
+    padding: 10px;
+    position: relative;
+}
+
+#kaa {
+    background-color: bisque;
+    padding: 10px;
+    position: relative;
+    left: 30px;
+    bottom: 40px;
+    z-index: -1s;
+}
+
+#koo {
+    width: 40%;
+    height: 100px;
+    background-color: aqua;
+    padding: 10px;
+    overflow: auto;
+}
+
+
+ .vasuri {
+      float: left;
+      width: 45%;
+      background-color: khaki;
+      padding: 20px;
+      border-radius: 20px;
+      
+    }
+
+    .oikialastu{
+      float: right;
+      width: 45%;
+      background-color: plum;
+      padding: 20px;
+      
+    }
+
+    .poisto {
+        clear: both;
+        background-color: brown;
+        padding: 10px;
+    }

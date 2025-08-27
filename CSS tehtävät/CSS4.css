@@ -1,0 +1,22 @@
+div {
+    background-color: yellow;
+    border: 2px solid rebeccapurple;
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+    width: 50%;
+}
+
+#para::first-line {
+    color: blueviolet;
+    font-size: 28px;
+}
+
+#para + #para1 {
+    background-color: aqua;
+    padding: 10px;
+}
+
+ p [title="para1"] {
+      font-weight: bold;
+ }
