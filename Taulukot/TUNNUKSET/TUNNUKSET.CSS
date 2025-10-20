@@ -1,0 +1,25 @@
+body {
+    color: rgb(221, 175, 26);
+    background-color: rgb(126, 122, 102);
+    margin: 30px;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+button {
+    margin-left: 123px;
+}
+
+#ktunnus {
+      background-color: yellowgreen;
+}
+#salasana {
+    background-color: yellowgreen;
+}
+
+#button {
+    background-color: red;
+    will-change: color: red,black;
+}

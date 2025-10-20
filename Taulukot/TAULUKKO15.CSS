@@ -29,6 +29,7 @@ tr:nth-child(odd) {
 
 
 
-#para1 { 
+.vasen {
+    text-align: left; 
 
 }

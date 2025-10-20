@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS perustehtävät 1-5</title>
+    <link rel="stylesheet" href="PERUS.CSS">
+    <script src="perus.js"></script>
+</head>
+<body>
+    <article id="yksi">
+        <h2> Tehtävä 1 </h2>
+        <p>Tee ohjelma, joka pyytää käyttäjältä kolmea numeroa ja laittaa ne järjestykseen</p>
+        <form onsubmit="return false"> <!-- tämä estää sivua päivittymästä -->
+            <p>Anna 1. numero <input type="text" id="luku1" value=""> </p>
+            <p>Anna 2. numero <input type="text" id="luku2" value=""> </p>
+            <p> Anna 3. numero <input type="text" id="luku3" value=""> </p>
+            <button type="submit" onclick="jarjesta(event)">Järjestä luvut</button>
+    </form>
+    <p id="vastaus"> Vastaus tulee tähän </p> <!-- tämä estää sivua päivittymästä -->
+    </article>
+    <article id="kaksi">
+        <h2>Tehtävä 2</h2>
+        <p> Kirjoita ohjelma, joka ottaa vastaan 5 lukua ja etsii niistä suurimman</p>
+        <form onsubmit="return false"> <!-- tämä estää sivua päivittymästä -->
+            <p>Anna 1. numero <input type="number" id="eka" value=""> </p>
+            <p>Anna 2. numero <input type="number" id="toka" value=""> </p>
+            <p> Anna 3. numero <input type="number" id="kolmas" value=""> </p>
+            <p> Anna 4. numero <input type="number" id="neljas" value=""> </p>
+            <p> Anna 5. numero <input type="number" id="viides" value=""> </p>
+            <button type="submit" onclick="etsiSuurin()">Etsi suurin numero</button>
+        </form>
+        <p id="toki"> vastaus tulee tähän </p> <!-- tämä estää sivua päivittymästä -->
+    </article>
+    <article id="kolmas">
+        <h2>Tehtävä 3</h2>
+        <p>Kirjoita ohjelma, joka kertoo, onko antamasi luku parillinen vai pariton</p>
+        <form onsubmit="return false">
+          <p>Anna 1. numero <input type="number" id="ekas" required></p>
+          <button type="submit" onclick="parillinenPariton()">Tarkista parillisuus</button>
+        </form>
+        <p id="toky">Vastaus tulee tähän</p>
+      </article>
+
+</body>
+</html>
