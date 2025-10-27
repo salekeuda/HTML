@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolmannet Harjoitukset</title>
+    <link rel="stylesheet" href="kolmannet.css">
+    <script src="Kolmannet.js"></script>
+</head>
+<body>
+<article id="yksi">
+    <h2>Tehtävä 1</h2>
+    <p>Tee ohjelma, joka pyytää käyttäjältä parillista lukua ja tulostaa tämän jälkeen kaikki parilliset luvut siihen asti poislukien 0:n</p>
+    <form onsubmit="return false">
+      <p>Anna parillinen numero: <input type="number" id="eka" required></p>
+      <button type="submit" onclick="naytaParillisetAlaspain()">Laskee parilliset alaspäin</button>
+    </form>
+    <p id="toky">Vastaus tulee tähän</p>
+</article>
+
+<article id="kaksi">
+    <h2>Tehtävä 2</h2>
+    <p>Kirjoita ohjelma, joka muuntaa käyttäjän antaman sanan salasanaksi siten, että laittaa joka toiseksi kirjaimeksi ison Ö-kirjaimen, eli jos sana on Kaappi --> KÖaÖaÖpÖpÖiÖ</p>
+    <form onsubmit="return false">
+        <p>Anna sana: <input type="text" id="toka" required></p>
+        <button type="submit" onclick="lisaaÖJokaToisenJalkeen()">Korvaa joka toisen kirjaimen öö:ksi</button>
+    </form>
+<p id="tulos">Vastaus tulee tähän</p>
+</article>
+<article id="kolome">
+    <h2>Tehtävä 3</h2>
+    <p>Kirjoita ohjelma, joka tarkastaa, onko antamassasi sanassa ö-kirjainta ja kirjoittaa vastaukseksi joko: on tai ei ole</p>
+    <form onsubmit="return false">
+        <p>Anna sana: <input type="text" id="koo" required></p>
+        <button type="submit" onclick="tarkastaaOnkoÖ()">Tarkastaa onko sanassa ö</button>
+    </form>
+    <p id="tarkasta">Vastaus tulee tähän</p>
+</article>
+</body>
+</html>
