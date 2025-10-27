@@ -29,4 +29,39 @@ function naytaParillisetAlaspain() {
     document.getElementById("tulos").textContent = salasana;
   }
 
+  function tarkastaaOnkoÖ() {
+    // Haetaan syötekentän arvo
+    const syote = document.getElementById("koo").value;
+
+    // Haetaan vastauspaikka
+    const vastaus = document.getElementById("tarkasta");
+
+    // Tarkastetaan, sisältääkö sana ö- tai Ö-kirjaimen
+    if (syote.includes("ö") || syote.includes("Ö")) {
+        vastaus.textContent = "Odotas mietin, ööÖööÖÖööÖööö. Aivan kyllä ö kirjain löytyy";
+    } else {
+        vastaus.textContent = "Ei ole, kokeile seuraavaksi sanaa jossa on ö";
+    }
+}
+
+
+function laskeKertoma() {
+    const syote = document.getElementById("kertomaLuku").value;
+    const luku = parseInt(syote, 10);
+    const tulos = document.getElementById("kertomaTulos");
+
+    if (isNaN(luku) || luku < 0) {
+        tulos.textContent = "Anna ei-negatiivinen kokonaisluku!";
+        return;
+    }
+
+    let kertoma = 1;
+    for (let i = 2; i <= luku; i++) {
+        kertoma *= i;
+    }
+
+    tulos.textContent = `${luku}! = ${kertoma}`;
+}
+
+
 

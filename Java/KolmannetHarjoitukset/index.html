@@ -8,6 +8,7 @@
     <script src="Kolmannet.js"></script>
 </head>
 <body>
+
 <article id="yksi">
     <h2>Tehtävä 1</h2>
     <p>Tee ohjelma, joka pyytää käyttäjältä parillista lukua ja tulostaa tämän jälkeen kaikki parilliset luvut siihen asti poislukien 0:n</p>
@@ -27,6 +28,7 @@
     </form>
 <p id="tulos">Vastaus tulee tähän</p>
 </article>
+
 <article id="kolome">
     <h2>Tehtävä 3</h2>
     <p>Kirjoita ohjelma, joka tarkastaa, onko antamassasi sanassa ö-kirjainta ja kirjoittaa vastaukseksi joko: on tai ei ole</p>
@@ -36,5 +38,16 @@
     </form>
     <p id="tarkasta">Vastaus tulee tähän</p>
 </article>
+
+<h2>Tehtävä 4</h2>
+<p>Kirjoita ohjelma, joka laskee annetun luvun kertoman
+    (esim: 4 -> 4*3*2*1 = 24) :</p>
+    <form onsubmit="return false">
+        <input type="number" id="kertomaLuku" min="0" required>
+    <button onclick="laskeKertoma()">Laske kertoma</button>
+    </form>
+<!-- <input type="number" id="kertomaLuku" min="0" required>
+<button onclick="laskeKertoma()">Laske kertoma</button> -->
+<p id="kertomaTulos">Vastaus tulee tähän</p>
 </body>
 </html>
