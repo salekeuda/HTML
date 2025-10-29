@@ -39,6 +39,7 @@
     <p id="tarkasta">Vastaus tulee tähän</p>
 </article>
 
+<article id="neljä">
 <h2>Tehtävä 4</h2>
 <p>Kirjoita ohjelma, joka laskee annetun luvun kertoman
     (esim: 4 -> 4*3*2*1 = 24) :</p>
@@ -49,5 +50,108 @@
 <!-- <input type="number" id="kertomaLuku" min="0" required>
 <button onclick="laskeKertoma()">Laske kertoma</button> -->
 <p id="kertomaTulos">Vastaus tulee tähän</p>
+</article>
+
+<article id="viis">
+    <h2>Tehtävä 5
+    </h2>
+    <p>Kirjoita ohjelma, joka tulostaa näytölle luvut 1–100, kuitenkin siten, että jos luku on 3:lla jaollinen, tulostetaan hip, jos viidellä jaollinen tulostetaan heijaa ja jos sekä viidellä että kolmella jaollinen, tulostetaan hipheijaa.</p>
+
+    <form onsubmit="return false">
+      <button type="submit" onclick="tulostaHipHeijaa()">Tulosta luvut</button>
+    </form>
+
+    <pre id="tulostus">Tulos tulee tähän</pre>
+  </article>
+
+  <article id="kuutone">
+    <h2>Tehtävä 6</h2>
+    <p>Kirjoita ohjelma, joka tulostaa 10 ensimmäistä numeroa.</p>
+
+    <form onsubmit="return false">
+      <button type="submit" onclick="tulostaNumerot()">Tulosta numerot</button>
+    </form>
+
+    <pre id="ykä" style="white-space: pre-wrap; word-wrap: break-word;">
+      Tulos tulee tähän
+    </pre>
+  </article>
+
+  <article id="seittemä">
+    <h2>Tehtävä 7</h2>
+    <p>Kirjoita ohjelma, joka laskee 10 ensimmäistä numeroa yhteen.</p>
+
+    <form onsubmit="return false">
+      <button type="submit" onclick="laskeSumma()">Laske summa</button>
+    </form>
+
+    <pre id="tulostus7" style="white-space: pre-wrap; word-wrap: break-word;">
+      Tulos tulee tähän
+    </pre>
+  </article>
+
+<article id="kaheksan">
+    <h2>Tehtävä 8</h2>
+    <p>Kirjoita ohjelma, joka kysyy käyttäjältä kahta lukua ja laskee ensimmäisen potenssiin toisen. Esim. 5 ja 2 = 5² = 25</p>
+
+    <form onsubmit="return false">
+      <p>Ensimmäinen luku: <input type="number" id="luku1" required></p>
+      <p>Toinen luku (eksponentti): <input type="number" id="luku2" required></p>
+      <button type="submit" onclick="laskePotenssi()">Laske potenssi</button>
+    </form>
+
+    <pre id="tulostus8" style="white-space: pre-wrap; word-wrap: break-word;">
+      Tulos tulee tähän
+    </pre>
+  </article>
+
+  <article id="yheksä"> <!-- Tämä ei toimi --> 
+  <h2>Tehtävä 9</h2>
+  <p>Kirjoita ohjelma, joka etsii annetusta luvuista suurimman ja pienimmän arvon, viidestä vaihtoehdosta.</p>
+
+  <form onsubmit="return false">
+    <p>Luku 1: <input type="number" id="luku1" required></p>
+    <p>Luku 2: <input type="number" id="luku2" required></p>
+    <p>Luku 3: <input type="number" id="luku3" required></p>
+    <p>Luku 4: <input type="number" id="luku4" required></p>
+    <p>Luku 5: <input type="number" id="luku5" required></p>
+    <button type="submit" onclick="etsiSuurinJaPienin()">Etsi suurin ja pienin</button>
+  </form>
+
+  <pre id="tulostus9" style="white-space: pre-wrap; word-wrap: break-word;">
+    Tulos tulee tähän
+  </pre>
+</article>
+
+<article id="kymppi">
+    <h2>Tehtävä 10</h2>
+    <p>Muokataan salasalatehtävää siten, että se arpoo kirjaimen Ö:n sijasta.</p>
+
+    <form onsubmit="return false">
+      <p>Anna muokattava salasana: <input type="text" id="salasana" required></p>
+      <button type="submit" onclick="muunnaSalasana()">Muunna salasanaksi</button>
+    </form>
+
+    <pre id="tulostus10" style="white-space: pre-wrap; word-wrap: break-word;">
+      Tulos tulee tähän
+    </pre>
+  </article>
+
+   <article id="yksitoista">
+    <h2>Tehtävä 11</h2>
+    <p>Tee ohjelma, joka pyytää käyttäjältä kahta numeroa (jälkimmäisen tulee olla isompi) ja tulostaa tuolla välillä parilliset ja parittomat numerot sekä niiden summat.</p>
+
+    <form onsubmit="return false">
+      <p>Anna pienempi numero: <input type="number" id="pienempi" required></p>
+      <p>Anna isompi numero: <input type="number" id="isompi" required></p>
+      <button type="submit" onclick="tulostaParillisetJaParittomat()">Näytä tulokset</button>
+    </form>
+
+    <pre id="tulostus11" style="white-space: pre-wrap; word-wrap: break-word;">
+      Tulos tulee tähän
+    </pre>
+  </article>
+
+
 </body>
 </html>

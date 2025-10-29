@@ -8,3 +8,43 @@
 #kolome {
     background-color: bisque;
 }
+
+#neljä {
+    background-color: blueviolet;
+} 
+
+#viis {
+    background-color: orangered;
+   /* vaihtoehto tekstin ylimenolle sivulla 
+   <!--<pre id="tulostus" style="white-space: pre-wrap; word-wrap: break-word;">
+    Tulos tulisi tähän
+   </pre> */
+}
+
+#kuutone {
+     background-color:plum
+}
+
+#seittemä {
+    background-color:paleturquoise
+}
+
+
+
+#kaheksan {
+    background-color:peru
+}
+
+#yheksä {
+    background-color:palegreen
+}
+
+#kymppi {
+    background-color:yellowgreen
+}
+
+#yksitoista {
+    background-color:rebeccapurple
+}
+
+
